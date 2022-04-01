@@ -20,7 +20,7 @@ For each iteration, we must lower the temperature $T$ by some amount. This can b
 The program is implemented using the **C** programming language for full control over the data structures and pointers required.
 
 #### 1. Create a Random Initial State
-This works the same as it did in Assignment 1, creating a random board configuration that our algorithm will attempt to solve. Here, we can implement a method for making sure the board is solveable, if that is something we want to do.
+In this initial stage we are creating a random board configuration that our algorithm will attempt to solve. Here, we can implement a method for making sure the board is solveable, if that is something we want to do.
 
 ```cpp
 /* The data-structure representing a board configuration. 
@@ -146,13 +146,13 @@ else {
 ```
 
 #### 4. Define our Data Structures
-Like in Assignment 1, we will have **Nodes** that contain the following data:
+For this project, we will have **Nodes** that contain the following data:
 - The node's board configuration
 - The heurisitc cost of this node's board
 - A pointer to it's parent node
 - A pointer to it's child node
 
-We will use the **NodeQueue** object from Assignment 1 to store the list of moves performed.
+We will use a **NodeQueue** object to store the list of moves performed.
 
 The **Board** data structure will simply contain a 3x3, 2d-array of values representing the cells in our grid. It will also contain the *last move used to create this configuration*.
 
